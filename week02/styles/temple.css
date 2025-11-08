@@ -1,0 +1,71 @@
+/* Reset default spacing and box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 16px 0;
+  font-size: 1.5rem;
+}
+
+/* Main title for temple name */
+h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* Main image styling */
+img {
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sections styling */
+section {
+  background-color: #ddd;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+/* Section titles */
+section h2 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #888;
+  padding-bottom: 4px;
+}
+
+/* Paragraphs and lists inside sections */
+section p,
+section ul {
+  margin-top: 10px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 0;
+  margin-top: 40px;
+}
