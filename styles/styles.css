@@ -1,0 +1,29 @@
+main {
+  max-width: 840px; /* Keeps the content from stretching too wide on large screens */
+}
+aside {
+  width: 20rem; /* sets a fixed width */
+  margin: 1rem; /* space around the aside element */
+  border: 1px solid rgb(0 0 0 / 0.2); /* subtle, mostly transparent border */
+  padding: 1rem; /* space inside the box so content doesn’t touch edges */
+  background-color: #eee; /* light gray background */
+  color: #333; /* dark gray text for contrast */
+  text-align: center; /* centers text inside aside */
+}
+aside img {
+  width: 200px;
+  height: auto; /* keeps the original aspect ratio, so the image doesn’t get squished or stretched */
+}
+main img {
+  width: 150px;
+  height: auto;
+  /* other styles like border-radius or box-shadow can go here if needed */
+}
+p {
+  padding: 0; /* no padding needed, default spacing handled elsewhere */
+}
+footer {
+  margin-top: 40px; /* separates it from main content */
+  border-top: 2px solid #333; /* visual distinction with a top border */
+  text-align: center; /* centers any text inside the footer */
+}
