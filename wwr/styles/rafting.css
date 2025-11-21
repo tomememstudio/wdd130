@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
     --primary-color: #1E90FF; /* Blue for headings */
-    --accent1-color: #FF4500; /* Darker orange for better contrast */
+    --accent1-color: #FF6347; /* Orange for accents */
     --body-font: Arial, sans-serif;
     --heading-font: 'Georgia', serif;
 }
@@ -16,8 +16,7 @@
 /* Body styling */
 body {
     font-family: var(--body-font);
-    color: #333; /* Dark gray for better readability */
-    background-color: #fff;
+    color: var(--accent1-color);
 }
 
 /* Layout centering */
@@ -34,38 +33,33 @@ header {
     margin-top: 16px;
 }
 
-/* Nav list styling */
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 24px;
-}
-
-nav ul li a {
+/* Nav links styling */
+header nav a {
     text-decoration: none;
     color: var(--accent1-color);
     font-weight: bold;
+    margin-left: 16px;
 }
 
-/* Heading styles */
+/* Headings */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* Basic element spacing */
+/* Basic spacing */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-/* Header logo */
+/* Logo */
 .logo {
     width: 150px;
     display: block;
 }
 
-/* Remove social media underline */
+/* Social media links */
 .socialmedia a {
     text-decoration: none;
 }
@@ -88,34 +82,22 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* darker semi-transparent overlay for contrast */
+    background-color: var(--accent1-color);
+    opacity: 0.7;
     color: #fff;
-    font-size: 2rem;
 }
 
-/* Article overlay in hero */
+/* Article in hero */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.9); /* slightly more opaque for contrast */
-    padding: 12px;
-    border-radius: 8px;
-    color: #333; /* darker text for better readability */
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    max-width: 30%;
+    height: auto;
     margin-left: 16px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-/* Footer social media icons */
-.socialmedia img {
-    width: 32px;
-    margin-right: 8px;
 }
