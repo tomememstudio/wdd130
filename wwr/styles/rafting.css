@@ -25,6 +25,27 @@ header, main, footer {
     margin: 0 auto;
 }
 
+/* Header layout */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+/* Nav list styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
 /* Heading styles */
 h1, h2 {
     font-family: var(--heading-font);
@@ -41,7 +62,6 @@ nav, p, section, article {
 .logo {
     width: 150px;
     display: block;
-    margin-bottom: 8px;
 }
 
 /* Remove social media underline */
@@ -60,14 +80,14 @@ nav, p, section, article {
     height: auto;
 }
 
+/* Hero heading overlay */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: rgba(255, 99, 71, 0.7); /* semi-transparent orange */
     color: #fff;
 }
 
@@ -85,6 +105,7 @@ nav, p, section, article {
 .hero article img {
     float: right;
     width: 125px;
+    max-width: 30%;
     margin-left: 16px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
