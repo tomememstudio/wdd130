@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
     --primary-color: #1E90FF; /* Blue for headings */
-    --accent1-color: #FF6347; /* Orange for accents */
+    --accent1-color: #FF4500; /* Darker orange for better contrast */
     --body-font: Arial, sans-serif;
     --heading-font: 'Georgia', serif;
 }
@@ -16,7 +16,8 @@
 /* Body styling */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #333; /* Dark gray for better readability */
+    background-color: #fff;
 }
 
 /* Layout centering */
@@ -87,8 +88,9 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(255, 99, 71, 0.7); /* semi-transparent orange */
+    background-color: rgba(0, 0, 0, 0.7); /* darker semi-transparent overlay for contrast */
     color: #fff;
+    font-size: 2rem;
 }
 
 /* Article overlay in hero */
@@ -97,9 +99,10 @@ nav, p, section, article {
     bottom: 20px;
     left: 20px;
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9); /* slightly more opaque for contrast */
     padding: 12px;
     border-radius: 8px;
+    color: #333; /* darker text for better readability */
 }
 
 .hero article img {
