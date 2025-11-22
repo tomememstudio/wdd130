@@ -1,87 +1,109 @@
-/* VARIABLES */
+/* ===============================
+   VARIABLES
+================================*/
 :root {
     --blue: #12355B;
     --light-blue: #1E90FF;
     --orange: #FF6347;
+
     --heading-font: Georgia, serif;
     --body-font: Arial, sans-serif;
 }
 
-/* RESET */
+/* ===============================
+   RESET
+================================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* PAGE WIDTH */
+/* ===============================
+   PAGE WIDTH
+================================*/
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-/* BODY */
+/* ===============================
+   BODY
+================================*/
 body {
     font-family: var(--body-font);
     color: #000;
+    background-color: #fff;
 }
 
-/* HEADER */
+/* ===============================
+   HEADER (GRID)
+================================*/
 header {
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 20px 0;
 }
 
-/* Vertical nav like example */
+/* ===============================
+   NAV (FLEX - HORIZONTAL)
+================================*/
 nav ul {
+    display: flex;
+    gap: 30px;
     list-style: none;
-    margin-top: 10px;
-}
-
-nav ul li {
-    margin-bottom: 8px;
+    justify-content: flex-end;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    padding: 5px 10px;
 }
 
-/* HERO */
+nav ul li a:hover {
+    color: var(--blue);
+}
+
+/* ===============================
+   HERO SECTION
+================================*/
 .hero {
     position: relative;
 }
 
 .hero img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
-/* Blue header bar in hero */
 .hero h1 {
     position: absolute;
-    top: 20px;
+    top: 10px;
     width: 100%;
-    background-color: rgba(18,53,91,0.9);
-    color: white;
-    font-family: var(--heading-font);
+    background: rgba(18, 53, 91, 0.9);
+    color: #fff;
     text-align: center;
     padding: 15px 0;
+    font-family: var(--heading-font);
     font-size: 32px;
 }
 
-/* Article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     width: 70%;
-    background-color: rgba(18,53,91,0.9);
-    color: white;
-    padding: 15px;
+    background: rgba(18, 53, 91, 0.95);
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
-/* Small photo = square (no border-radius) */
 .hero article img {
     float: right;
     width: 120px;
@@ -89,23 +111,78 @@ nav ul li a {
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
-/* SECTION HEADERS */
-section h2 {
-    background-color: var(--blue);
-    color: white;
+/* ===============================
+   HISTORY SECTION
+================================*/
+.history {
     text-align: center;
-    padding: 12px;
-    font-family: var(--heading-font);
-    margin-top: 30px;
+    margin: 40px 0 20px;
 }
 
-/* FOOTER */
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.history-grid img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+/* ===============================
+   ADVENTURE SECTION
+================================*/
+.adventures {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.adventure-grid figure {
+    text-align: center;
+    width: 150px;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.adventure-grid figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* ===============================
+   FOOTER
+================================*/
 footer {
-    margin-top: 30px;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 2px solid #ccc;
+    margin-top: 40px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
 }
 
 .socialmedia img {
-    width: 28px;
-    margin-right: 8px;
+    width: 35px;
+    height: 35px;
 }
