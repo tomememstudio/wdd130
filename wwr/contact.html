@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting | Contact Us</title>
+
+    <!-- NEW SHORTER META DESCRIPTION (150 chars) -->
     <meta name="description"
-        content="Contact White Water Rafting Company. Ask questions, make reservations, send suggestions, and learn more about our services. Reach us by phone, email, or our contact form.">
+        content="Contact White Water Rafting to ask questions, make reservations, or send suggestions. Reach us by phone, email, or our contact form.">
+
+    <!-- META AUTHOR -->
+    <meta name="author" content="Tom Emem">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
     <!-- Header with logo and nav -->
     <header>
         <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
@@ -28,43 +35,63 @@
 
         <section class="contact-info">
             <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street<br>
+            <p>
+                123 Main River Street<br>
                 San Diego, California<br>
                 +1 999 999 9999<br>
-                info@whitewater.com</p>
+                info@whitewater.com
+            </p>
         </section>
 
         <section class="contact-grid">
-            <!-- LEFT SIDE MAP -->
+
+            <!-- LEFT: MAP -->
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18....your-map-url-here..." allowfullscreen=""
-                    loading="lazy">
-                </iframe>
+                    loading="lazy"></iframe>
             </div>
 
-            <!-- RIGHT SIDE FORM -->
+            <!-- RIGHT: FORM -->
+            <!-- EXACTLY ONE FORM IN <main> -->
             <form>
+
+                <!-- TEXT INPUT -->
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
+                <!-- EMAIL INPUT -->
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="purpose">Message Purpose:</label>
-                <select id="purpose" name="purpose" required>
-                    <option value="" selected disabled>Choose one...</option>
-                    <option value="support">Support</option>
-                    <option value="billing">Billing</option>
-                    <option value="general">General Inquiry</option>
-                </select>
+                <!-- PURPOSE (NOW RADIO BUTTONS — EXACTLY 3 REQUIRED) -->
+                <p>Message Purpose:</p>
 
+                <label for="support">
+                    <input type="radio" id="support" name="purpose" value="support" required>
+                    Support
+                </label>
+
+                <label for="billing">
+                    <input type="radio" id="billing" name="purpose" value="billing">
+                    Billing
+                </label>
+
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general">
+                    General Inquiry
+                </label>
+
+                <!-- TEXTAREA -->
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="newsletter"> Sign me up for the newsletter
+                <!-- CHECKBOX (NOW HAS ID + NAME) -->
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Sign me up for the newsletter
                 </label>
 
+                <!-- SUBMIT BUTTON WITH MEANINGFUL TEXT -->
                 <button type="submit">Send Message</button>
             </form>
 
@@ -89,7 +116,6 @@
                     <figcaption>Michael | Office Manager</figcaption>
                 </figure>
             </div>
-
         </section>
 
     </main>
@@ -102,3 +128,7 @@
             <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
         </nav>
     </footer>
+
+</body>
+
+</html>
